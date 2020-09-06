@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{% static 'pages/css/all.css' %}">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="{% static 'pages/css/bootstrap.css' %}">
+  <!-- Custom -->
+  <link rel="stylesheet" href="{% static 'pages/css/style.css' %}">
+  <!-- Lightbox -->
+  <link rel="stylesheet" href="{% static 'pages/css/lightbox.min.css' %}">
+
+  <title>BT Real Estate</title>
+</head>
+<body>
+    
+    <!-- Topbar -->
+    {% include "partials/_topbar.html" %}
+
+    <!-- Nav -->
+    {% include "partials/_nav.html" %}
+
+
+    {% block body %}
+    {% endblock body %}
+
+    <!-- Footer -->
+    {% include "partials/_footer.html" %}
+
+
+    <script src="{% static 'pages/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'pages/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'pages/js/main.js' %}"></script>
+</body>
+</html>
